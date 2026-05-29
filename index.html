@@ -1,13 +1,20 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendas CSM - ClipEscola</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --primary-color: #007bff;
-            --primary-hover: #0056b3;
+            --primary-color: #22367b;
+            --primary-hover: #1a295e;
+            --accent-color: #ffca26;
             --bg-color: #f8f9fa;
             --card-bg: #ffffff;
             --text-color: #333333;
@@ -16,7 +23,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Nunito', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             margin: 0;
@@ -39,22 +46,17 @@
             margin-bottom: 24px;
         }
 
-        /* Representação minimalista do logo ClipEscola (ícone de clipe/escola) se necessário, ou apenas texto estilizado */
-        .logo-text {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--text-color);
-            letter-spacing: -0.5px;
-        }
-        .logo-text span {
-            color: var(--primary-color);
+        .logo-container img {
+            max-width: 220px;
+            width: 100%;
+            height: auto;
         }
 
         h1 {
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 8px;
-            color: var(--text-color);
+            color: var(--primary-color);
         }
 
         p.subtitle {
@@ -78,7 +80,7 @@
             padding: 16px 20px;
             border-radius: 8px;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 600;
             border: 1px solid var(--border-color);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
             transition: all 0.2s ease-in-out;
@@ -100,12 +102,12 @@
             background-color: var(--card-bg);
             border-color: var(--primary-color);
             color: var(--primary-color);
-            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.08);
+            box-shadow: 0 4px 12px rgba(34, 54, 123, 0.12);
             transform: translateY(-1px);
         }
 
         .btn-agenda:hover::after {
-            color: var(--primary-color);
+            color: var(--accent-color);
             transform: translateY(-50%) translateX(3px);
         }
 
@@ -120,7 +122,7 @@
 
     <div class="container">
         <div class="logo-container">
-            <div class="logo-text">Clip<span>Escola</span></div>
+            <img src="https://i.imgur.com/IVPOWqc.png" alt="Logo ClipEscola">
         </div>
         
         <h1>Agendamentos CSM</h1>
@@ -142,3 +144,4 @@
 
 </body>
 </html>
+```
